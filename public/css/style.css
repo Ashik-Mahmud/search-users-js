@@ -1,0 +1,102 @@
+/* stylesheets  */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: poppins;
+    font-size: 16px;
+    background: #ffffff;
+    min-height: 100vh;
+
+
+}
+
+
+/* customn class  */
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+@media (max-width: 1170px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.wrapper {
+    padding: 2rem;
+    position: relative;
+    background: #fff;
+}
+
+.wrapper .search-wrapper {
+    position: relative;
+    padding: 1rem;
+    border: 1px solid #f1f1f1;
+}
+
+.content-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #f1f1f1;
+}
+
+.search-wrapper input {
+    width: 100;
+    padding: .6rem;
+    width: 100%;
+    font-family: poppins;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.content-wrapper .content-box {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content-box .header {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.content-box .body {
+    color: rgb(97, 96, 96);
+}
+
+.content-box .avatar {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: .4rem 0rem;
+    background: rgba(245, 245, 245, 0.933);
+    font-family: montserrat;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.hide {
+    display: none;
+}
